@@ -25,10 +25,10 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotInit() {
-    m_motor1 = new CANSparkMax(1, MotorType.kBrushless);
-    m_motor2 = new CANSparkMax(2, MotorType.kBrushless);
-    m_motor3 = new CANSparkMax(3, MotorType.kBrushless);
-    m_motor4 = new CANSparkMax(4, MotorType.kBrushless);
+    m_motor1 = new CANSparkMax(1, MotorType.kBrushed);
+    m_motor2 = new CANSparkMax(2, MotorType.kBrushed);
+    m_motor3 = new CANSparkMax(3, MotorType.kBrushed);
+    m_motor4 = new CANSparkMax(4, MotorType.kBrushed);
 
     m_left = new MotorControllerGroup(m_motor1, m_motor2);
     m_right = new MotorControllerGroup(m_motor3, m_motor4);
